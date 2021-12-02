@@ -339,6 +339,9 @@ input {
         display: none;
     }
 
+    .header_menu-hamburguesa {
+        display:flex;
+    }
     header {
         justify-content: space-between;
         flex-direction: row;
