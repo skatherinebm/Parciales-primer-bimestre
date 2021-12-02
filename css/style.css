@@ -29,7 +29,7 @@ header nav ul{
     padding-left: 0;
 }
 
-.header_menu_hamburguesa {
+.header_menu-hamburguesa {
     display: none;
 }
 
@@ -287,6 +287,7 @@ input {
     justify-content: space-between;
     align-items: center;
     border: none;
+    color: white;
 }
 
 .footer_input:nth-child(1) {
@@ -294,6 +295,10 @@ input {
 }
 
 @media (max-width:400px) {
+
+    html {
+        font-size: 15px;
+    }
 
     header nav {
         display: none;
@@ -307,6 +312,10 @@ input {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 
     main .main__graphs {
@@ -346,12 +355,14 @@ input {
     main section article.cajas2 h2 {
         width: 100%;
         text-align: center;
+        font-size: 1.9rem;
     }
 
     .cuarto_cuadrante div h3 {
         margin-left: unset;
         padding: 1rem 0;
         text-align: center;
+        font-size: 0.9rem;
     }
 
     .cuarto_cuadrante div p {
@@ -376,6 +387,10 @@ input {
     section.reviews article {
         width: 100%;
     }
+    div.reviews h2 {
+        text-align: center;
+        font-size: 1.9rem;
+    }
 
     .puntos {
         display: block;
@@ -393,6 +408,7 @@ input {
         width: 100%;
         text-align: center;
         padding: 4rem 0 1rem 0;
+        font-size: 2.5rem;
     }
 
     section.main__franja-naranja button {
@@ -400,10 +416,45 @@ input {
     }
 
     footer {
-        flex-direction: column-reverse;
+        flex-direction: row;
         height: auto;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    footer div.footer_izquierdo {
+        flex-direction: column-reverse;
+        height: 5rem;
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        order: 1;
+    }
+
+    footer p {
+        position: absolute;
+        bottom: 1rem;
+        text-align: center;
+        color: white;
+        font-weight: 100;
+        font-size: 0.8rem;
     }
 
 
+    .footer_input {
+        flex-direction: row;
+        order: -1;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: space-around;
+    }
 
+    footer div div.footer__redes {
+        justify-content: space-around;
+    }
+    
+    .nav nav ul {
+        text-align: left;
+        padding-left: 0;
+    }
 }
