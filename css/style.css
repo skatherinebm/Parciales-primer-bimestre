@@ -29,6 +29,10 @@ header nav ul{
     padding-left: 0;
 }
 
+.header_menu_hamburguesa {
+    display: none;
+}
+
 header nav ul li {
     color: var(--azulMuyOscuro);
     margin: 0 1rem ;
@@ -161,6 +165,7 @@ section.reviews {
     font-size: 2.5rem;
     color: var(--azulMuyOscuro);
     font-weight: 700;
+    margin-bottom: 5rem;
 }
 
 .reviews article {
@@ -191,6 +196,9 @@ section.reviews {
     padding: 0.8rem;
 }
 
+.puntos {
+    display: none;
+}
 
 .main__franja-naranja {
     background-color:#F3613C ;
@@ -202,9 +210,7 @@ section.reviews {
     padding: 0 7vw;
 }
 
-/* .main__franja-naranja:nth-child(n){
-    padding: 0 5vw;
-} */
+
 
 .main__franja-naranja h2 {
     font-size: 2.5rem;
@@ -280,8 +286,101 @@ input {
     height: 7rem;
     justify-content: space-between;
     align-items: center;
+    border: none;
 }
 
 .footer_input:nth-child(1) {
     flex-direction: row;
+}
+
+@media (max-width:400px) {
+
+    header nav {
+        display: none;
+    }
+
+    header .button_Get {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    main .main__graphs {
+        flex-direction: column-reverse;
+    }
+
+    main section article.cajas1 {
+        width: 100%;
+    }
+    
+    main section article.cajas1 img {
+        width: 100%;
+    }
+
+    main section.mitad {
+        flex-direction: column;
+    }
+
+    main section article.cajas2 {
+        width: 100%;
+    }
+
+    main section article.cajas2 h2 {
+        width: 100%;
+    }
+
+    .cuarto_cuadrante div h3 {
+        margin-left: unset;
+    }
+
+    .cuarto_cuadrante div p {
+        margin-left: unset;
+    }
+
+    div.reviews {
+        margin-bottom: 2rem;
+    }
+    section.reviews {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section.reviews article:nth-child(2n+1) {
+        display: none;
+    }
+    section.reviews article {
+        width: 100%;
+    }
+
+    .puntos {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+
+    .main__franja-naranja {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main__franja-naranja h2 {
+        width: 100%;
+        text-align: center;
+        padding: 4rem 0 1rem 0;
+    }
+
+    section.main__franja-naranja button {
+        margin-bottom: 4rem;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+
 }
