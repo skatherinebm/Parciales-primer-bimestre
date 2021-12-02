@@ -306,11 +306,25 @@ input {
     header {
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
     }
 
     main .main__graphs {
         flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
     }
+    main section article.primer_cuadrante {
+        align-items: center;
+        text-align: center;
+    }
+
+    p.izquierda {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
 
     main section article.cajas1 {
         width: 100%;
@@ -322,6 +336,7 @@ input {
 
     main section.mitad {
         flex-direction: column;
+        justify-content: center;
     }
 
     main section article.cajas2 {
@@ -330,15 +345,22 @@ input {
 
     main section article.cajas2 h2 {
         width: 100%;
+        text-align: center;
     }
 
     .cuarto_cuadrante div h3 {
         margin-left: unset;
+        padding: 1rem 0;
+        text-align: center;
     }
 
     .cuarto_cuadrante div p {
         margin-left: unset;
+        padding: 1rem 0;
+        text-align: center;
     }
+
+
 
     div.reviews {
         margin-bottom: 2rem;
@@ -378,9 +400,10 @@ input {
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: auto;
     }
+
 
 
 }
