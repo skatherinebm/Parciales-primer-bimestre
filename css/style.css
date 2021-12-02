@@ -23,21 +23,27 @@ header {
     margin-top: 1rem !important;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: space-between;
     padding-left: 0;
+    color: rgb(35, 44, 81);
 }
 
 .header_menu-hamburguesa {
     display: none;
 }
 
-header nav ul li {
+header nav ul li a {
     color: var(--azulMuyOscuro);
     margin: 0 1rem ;
     font-weight: 500;
 }
+
+header nav ul li a:hover {
+    color: var(--azulGrisaceoOscuro);
+}
+
 header nav ul li:last-child {
     margin-right: 0 ;
 }
@@ -53,6 +59,12 @@ header nav ul li:first-child {
     padding: 0.8rem 1.2rem;
     text-align: center;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.button_Get:hover {
+    cursor:pointer;
+    box-shadow: 0px 4px 7px rgba(231, 117, 51, 1);
+    background-color:rgba(231, 117, 51, 0.7) ;
 }
 
 .mitad {
@@ -228,6 +240,11 @@ section.reviews {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
+.get_blanco:hover {
+    color: #d88975;
+    cursor: pointer;
+}
+
 footer {
     background-color:#1E1E26;
     height: 14rem;
@@ -252,6 +269,10 @@ footer div div.footer__redes {
     width: 100%;
 }
 
+div.footer__redes img:hover {
+    cursor: pointer;
+}
+
 .nav nav ul{
     display: flex;
     flex-direction: column;
@@ -263,6 +284,10 @@ footer div div.footer__redes {
 
 .nav nav ul li a {
     color: white;
+}
+
+.nav nav ul li a:hover {
+    color: var(--naranjado);
 }
 
 input {
@@ -278,6 +303,12 @@ input {
     padding: 0.8rem 1.2rem;
     text-align: center;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.Go:hover {
+    cursor:pointer;
+    box-shadow: 0px 4px 7px rgba(231, 117, 51, 1);
+    background-color:rgba(212, 140, 111, 1) ;
 }
 
 .footer_input {
